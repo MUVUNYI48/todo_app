@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>MY TODO LIST APP</title>
+</head>
+<body>
+
+    <section>
+        <center><h1>My todoList app</h1></center>
+        <center>
+          <input type="text" id="task" placeholder="Enter your task"><br>
+          <label for="">End time of task</label>
+          <input type="datetime-local" id="dueDate"> 
+          <!-- Add a due date input -->
+          <button onclick="displayTask()">Add Task</button>
+        </center>
+    
+        <div class="container">
+          <div class="completed_task">
+            <h2>completed task</h2>
+            <ol id="completedTasks"> 
+                <!-- Ordered list for completed tasks -->
+            </ol>
+          </div>
+    
+          <div class="pending_task">
+            <h2>pending task</h2>
+            <ol id="pendingTasks">
+                 <!-- Ordered list for pending tasks -->
+            </ol>
+          </div>
+        </div>
+      </section>
+    <script src="my_todo.js"></script>
+</body>
+</html>
